@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(0, 100%, 74%)  url(/images/bg-intro-mobile.png);
+    font-size: 16px;
+    margin: 15% 5% 15% 5%;
+}
+
+
+
+.text-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.text-section h1 {
+    color: white;
+    font-family: 'Poppins';
+    margin-bottom: 10%;
+    padding: 0 10%;
+}
+
+.text-section p {
+    color: white;
+    font-family: 'Poppins';
+    padding: 0 3%;
+    margin-bottom: 15%;
+}
+
+.container-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#try-it {
+    width: 92%;
+    color: white;
+    font-family: 'Poppins';
+    line-height: 25px;
+    background: hsl(248, 32%, 49%);
+    border-style: none;
+    border-radius: 10px;
+    margin: 0 4%;
+    padding: 10px 30px;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.formulario {
+    background: white;
+    border-radius: 10px;
+    margin: 7% 4%;
+    padding: 7%;
+    box-shadow: 0 7px rgba(0, 0, 0, 0.2);
+}
+
+.formulario input {
+    font-family: 'Poppins';
+    font-weight: 700;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 203, 203);
+}
+
+#claim-button {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-weight: 500;
+    letter-spacing: 1px;
+    width: 100%;
+    background: hsl(154, 59%, 51%);
+    border-style: none;
+    border-radius: 5px;
+    margin: 0 0 5%;
+    padding: 10px;
+    box-shadow: 0 3px rgba(12, 119, 37, 0.6);
+}
+
+#claim-button:hover {
+    cursor: pointer;
+    background: hsl(154, 67%, 74%);
+}
+
+.formulario p {
+    color: hsl(246, 25%, 77%);
+    font-family: 'Poppins';
+    font-size: 11px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0 5%;
+}
+
+.formulario p span {
+    font-weight: 700;
+    color: hsl(0, 53%, 58%) ;
+}
+
+
+.form-control small {
+    color: hsl(0, 100%, 74%) ;
+    float: right;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+.form-control small {
+	opacity: 0;
+}
+
+.form-control.error small {
+	opacity: 1;
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-control img {
+    opacity: 0;
+    width: 20px;
+    position: absolute;
+	top: 35%;
+	right: 15px;
+	transform: translateY(-50%);
+}
+
+.form-control.error img {
+    opacity: 1;
+}
+
+.form-control.error input {
+	border-color: hsl(0, 100%, 74%);
+	color: hsl(0, 100%, 74%);
+}
+
+.form-control.error input::placeholder {
+	color: hsl(0, 100%, 74%);
+}
+
+
+@media (min-width: 576px) {
+    .text-section h1 {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        margin: 0 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    main {
+        display: flex;
+    }
+    .text-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    .text-section h1 {
+        padding: 0;
+        margin: 0 0 5% 0;
+        font-size: 2em;
+    }
+    .text-section p {
+        padding: 0 5% 0 0;
+        font-size: 0.8em;
+        margin: 0;
+    }
+    .container-section {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .text-section h1 {
+        padding: 0;
+        margin: 0 0 5% 0;
+        font-size: 3em;
+    }
+    .text-section p {
+        padding: 0 5% 0 0;
+        font-size: 1em;
+        margin: 0;
+    }
+    #try-it {
+        padding: 15px 45px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .text-section h1 {
+        padding: 0;
+        margin: 0 10% 5% 0;
+        font-size: 2em;
+    }
+    .text-section p {
+        padding: 0 10% 0 0;
+        font-size: 1em;
+        margin: 0;
+    }
+    #try-it {
+        padding: 20px 45px;
+    }
+}
